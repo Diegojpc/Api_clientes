@@ -132,7 +132,7 @@ Este proyecto es una API desarrollada en Flask para gestionar clientes en una ba
    docker-compose up --build
    ```
 
-4. La API estará disponible en `http://localhost:5000`.
+4. La API estará disponible en `http://localhost:5001`.
 
 ## Uso
 
@@ -142,14 +142,14 @@ Puedes utilizar [Postman](https://www.postman.com/) o `curl` para interactuar co
 
 Ejemplo con `curl` para crear un cliente:
 ```bash
-curl -X POST http://localhost:5000/clientes \
+curl -X POST http://localhost:5001/clientes \
     -H "Content-Type: application/json" \
     -d '{"nombre": "John Doe", "email": "john@example.com", "ubicacion": "New York"}'
 ```
 
 ## Docker
 
-Este proyecto está preparado para ejecutarse con Docker. Utiliza el archivo `docker-compose.yml` para levantar la aplicación y la base de datos MySQL. La aplicación Flask correrá en el puerto `5000` y MySQL en el puerto `3307`.
+Este proyecto está preparado para ejecutarse con Docker. Utiliza el archivo `docker-compose.yml` para levantar la aplicación y la base de datos MySQL. La aplicación Flask correrá en el puerto `5001` y MySQL en el puerto `3307`.
 
 ## Migraciones
 
