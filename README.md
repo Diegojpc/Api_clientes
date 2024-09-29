@@ -1,6 +1,4 @@
-```markdown
 # Api_clientes
-
 
 # API de Gestión de Clientes
 
